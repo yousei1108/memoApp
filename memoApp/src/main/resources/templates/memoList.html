@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}">
+	<link rel="stylesheet" th:href="@{/webjars/font-awesome/5.15.0/css/all.min.css}">
+<link rel="stylesheet" th:href="@{/css/style.css}">
+<link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+    
+<title>Insert title here</title>
+</head>
+
+<body class="bg-dark">
+    
+    <div class="container-fluid">
+
+        <!-- Header -->
+        <div class="header w-100 bg-dark border-bottom border-secondary shadow">
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                <a class="navbar-brand" href="#"><i class="icon fas fa-feather-alt"></i>シン・メモ帳</a>
+                <button class="navbar-toggler d-md-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+        </div>
+
+        <!-- Main & SideBar -->
+        <div class="row border-top border-secondary main-wrapper">
+
+            <!-- SideBar -->
+            <div class="sidebar col-xl-2 col-md-3 d-md-block collapse bg-dark" id="collapsibleNavId">
+                <ul class="nav flex-column mb-4">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="icon fas fa-book-open"></i>メモ一覧</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="icon fas fa-sign-out-alt"></i>サインアウト</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-success new-btn" href="#"><i class="icon fas fa-edit"></i>メモを追加する</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Main -->
+            <div class="main col-xl-10 col-md-9 bg-secondary pt-3 ml-md-auto">
+
+                <div class="d-md-flex justify-content-between border-bottom my-3">
+
+                    <h4 class="text-white d-md-block d-none">メモ一覧</h4>
+                    <form>
+                        <div class="input-group mb-2">
+                            <input type="text" placeholder="メモを検索" class="form-control">
+                            <div class="input-group-append">
+                            <button type="button" class="btn btn-outline-dark btn-dark text-white"><i class="fas fa-search"></i>検索</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+
+                <div class="d-flex flex-wrap justify-content-around">
+
+                    <!-- card -->
+                    <th:block th:each="memo:${memoList}" th:object="${memo}">
+                    <div class="card text-white bg-dark mb-3 d-inline-block">
+                        <div class="card-header border-bottom border-secondary d-flex justify-content-between">
+                            <p class="d-inline-block" th:text="${sdf.format(memo.update_at)}">2020/4/10</p>
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-info open-btn"><i class="fas fa-book-open"></i></button>
+                                <button type="button" class="btn btn-success edit-btn"><i class="fas fa-edit"></i></button>
+                                <input type="hidden" class="memo-id" th:value="*{memoId}">
+                                <button type="button" class="btn btn-danger delete-btn"><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title" th:id="'title_' + *{memoId}" th:text="*{title}">Primary card title</h4>
+                            <div class="overflow-hidden card-body-text" th:id="'text_' + *{memoId}" th:text="*{text}">quick example text to build on the card title and make up the bulk of the card's content. aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
+                        </div>
+                    </div>
+                    </th:block>
+                    <!-- card-end -->
+
+                            <!-- Modal Form -->
+                            <div class="modal fade text-white" id="memo_form" tabindex="-1"
+                            role="dialog" aria-labelledby="label1" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content bg-dark">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="label1">メモを書く</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <form th:action="@{/memo/save}" method="post" th:object="${memo}">
+                                            <div class="modal-body">
+
+                                                <div class="form-group">
+                                                    <label for="text1">タイトル</label>
+                                                    <input type="text" th:field="*{title}" class="form-control">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="textarea1">メモ</label>
+                                                    <textarea th:field="*{text}" rows="10" class="form-control"></textarea>
+                                                </div>
+                                                <input type="hidden" th:field="*{memoId}">
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fas fa-times-circle icon"></i>閉じる</button>
+                                                <button type="submit" class="btn btn-primary save-btn"><i class="fas fa-save icon"></i>保存</button>
+                                            </div>
+                                        </form>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ------------------  -->
+                    
+                
+            </div>
+
+            <!-- PageNation -->
+            <nav aria-label="Page navigation">
+                <ul class="pagination justify-content-center">
+                <li class="page-item bg-dark">
+                    <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item bg-dark"><a class="page-link" href="#">1</a></li>
+                <li class="page-item bg-dark"><a class="page-link" href="#">2</a></li>
+                <li class="page-item bg-dark"><a class="page-link" href="#">3</a></li>
+                <li class="page-item bg-dark">
+                    <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+                </ul>
+            </nav>
+            <!-- -------- -->
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- script -->
+    <script type="text/javascript" th:inline="javascript">
+
+        window.addEventListener('DOMContentLoaded', function(){
+
+            $(".open-btn").on("click" , function(){
+
+                $(".modal-title").text("メモを見る");
+
+                var id = $(this).siblings(".memo-id").val();
+                var title = $("#title_" + id).text();
+                var text = $( "#text_" + id ).text();
+
+                $("#title").val( title ).removeClass("form-control").addClass("form-control-plaintext");
+                $("#text").val( text ).removeClass("form-control").addClass("form-control-plaintext");
+                $("#memoId").val( id );
+                $(".save-btn").hide();
+
+                $("#memo_form").modal("show");
+
+            })
+
+            $(".edit-btn").on("click" , function(){
+
+                $(".modal-title").text("メモを編集");
+                
+                var id = $(this).siblings(".memo-id").val();
+                var title = $("#title_" + id).text();
+                var text = $( "#text_" + id ).text();
+
+                $("#title").val( title ).removeClass("form-control-plaintext").addClass("form-control");
+                $("#text").val( text ).removeClass("form-control-plaintext").addClass("form-control");
+                $("#memoId").val( id );
+                $(".save-btn").show();
+
+                $("#memo_form").modal("show");
+
+            })
+
+            $(".new-btn").on("click" , function(){
+
+                $(".modal-title").text("メモを書く");
+
+                $("#title").val("").removeClass("form-control-plaintext").addClass("form-control");
+                $("#text").val("").removeClass("form-control-plaintext").addClass("form-control");
+                $("#memoId").val("");
+                $(".save-btn").show();
+
+                $("#memo_form").modal("show");
+
+            })
+            
+            $(".delete-btn").on("click" , function(){
+
+                var id = $(this).siblings(".memo-id").val();
+
+                let check = confirm("このメモを削除しますか？");
+                url = /*[[@{/memo/delete}]]*/ "";
+
+                if( check ){
+                    window.location.href = url + "/" + id;
+                }else{
+
+                }
+
+            })
+
+        });
+
+    </script>
+
+
+	<script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+	<script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
+	<script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+	
+</body>
+
+</html>
