@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+
+		<th:block th:fragment="sidebar">
+            <!-- SideBar -->
+            <div class="sidebar col-xl-2 col-md-3 d-md-block collapse bg-dark" id="collapsibleNavId">
+                <ul class="nav flex-column mb-4">
+                    <li class="nav-item">
+                        <a class="nav-link" th:href="@{{url}1(url = ${url})}"><i class="icon fas fa-book-open"></i>メモ一覧</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" th:href="@{/logout}"><i class="icon fas fa-sign-out-alt"></i>サインアウト</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-success new-btn" href="#"><i class="icon fas fa-edit"></i>メモを追加する</a>
+                    </li>
+                </ul>
+            </div>
+        </th:block>
+
+</body>
+</html>

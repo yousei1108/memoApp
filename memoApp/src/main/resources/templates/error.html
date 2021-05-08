@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+
+	<th:block th:insert="fragments/base :: header"></th:block>
+
+<title>エラー画面</title>
+</head>
+<body>
+
+	<div class="text-center mt-5">
+    	<div class="error mx-auto h2" th:attr="data-text=${status}" th:text="${status}"></div>
+            <p class="h2 mb-5" th:text="${error}"></p>
+            <p class="mb-0">ページを表示できません</p>
+            <a th:href="@{/}">&larr; ホームに戻る</a>
+    </div>
+
+	<th:block th:insert="fragments/base :: scripts"></th:block>
+
+</body>
+</html>

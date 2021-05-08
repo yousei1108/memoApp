@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    
+    <th:block th:insert="fragments/base :: header"></th:block>
+    
+    <title>ログイン画面</title>
+</head>
+<body class="bg-dark text-center">
+
+    <div class="container login-form">
+        
+        <!-- Title -->
+        <div class="title h2 text-white">
+            <i class="fas fa-feather-alt"></i>
+            シン・メモ帳
+        </div>
+        
+        <!-- Form -->
+        <form th:action="@{/login}" method="post">
+        
+            <div class="badge badge-danger mb-2 w-100" th:if="${param.error}">
+            	ユーザー名、またはパスワードが異なります
+            </div>        
+            
+            <div class="form-group">
+                <input type="text" name="username" class="form-control" placeholder="ユーザー名">
+            </div>
+            
+            <div class="form-group mb-1">
+                <input type="password" name="password" class="form-control" placeholder="パスワード">
+            </div>
+            
+            <div class="text-white mb-3">
+                <input type="checkbox" name="remember-me" id="remember-me">
+                <label for="remember-me"> ログインしたままにする</label>
+            </div>            
+            
+            <button type="submit" class="btn btn-info w-100">
+                <i class="fas fa-sign-in-alt"></i>
+                ログイン
+            </button>
+        </form>
+        
+        <div class="mt-2">
+            <a th:href="@{/register}" class="border-bottom border-primary text-primary">新規登録はこちら</a>
+        </div>
+            
+    </div>
+    
+    <small class="text-secondary">&copy; 2021 yousei0302</small>
+    
+	<th:block th:insert="fragments/base :: scripts"></th:block>
+
+</body>
+</html>

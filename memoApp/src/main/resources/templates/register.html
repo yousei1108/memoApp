@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+
+	<th:block th:insert="fragments/base :: header"></th:block>	
+
+    <title>新規登録</title>
+</head>
+<body class="bg-dark">
+    
+    <div class="container register-form">
+        <div class="text-white h5 border-bottom mb-3">新規登録</div>
+        <form th:action="@{/register}" method="post" th:object="${user}" novalidate>
+            
+            <div class="form-group">
+            	<label class="mb-0 text-white" for="userName">ユーザー名(20文字以内)</label>
+                <input type="text" th:field="*{userName}" class="form-control" placeholder="ユーザー名" 
+                th:errorclass="is-invalid">
+                <div class="invalid-feedback" th:errors="*{userName}"></div>
+            </div>
+            
+            <div class="form-group">
+            	<label class="mb-0 text-white" for="password">パスワード</label>
+                <input type="password" th:field="*{password}" class="form-control" placeholder="パスワード"
+                th:errorclass="is-invalid">
+                <div class="invalid-feedback" th:errors="*{password}"></div>
+            </div>
+                   
+            
+            <button type="submit" class="btn btn-success w-100">
+                <i class="fas fa-user-plus"></i>
+                新規登録する
+            </button>
+        </form>
+    </div>
+
+
+	<th:block th:insert="fragments/base :: scripts"></th:block>
+
+
+</body>
+</html>

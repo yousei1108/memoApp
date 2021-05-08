@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+
+	<th:block th:insert="fragments/base :: header"></th:block>
+
+    <title>ログイン画面へ</title>
+</head>
+<body class="bg-dark">
+    
+    <div class="container register-form">
+        <div class="text-white h5 border-bottom mb-4" th:if="${param.register}">登録が完了しました</div>
+		<div class="text-white h5 border-bottom mb-4" th:if="${param.logout}">サインアウトしました</div>
+            <a th:href="@{/login}" class="btn btn-info w-100 text-white">
+                <i class="fas fa-sign-in-alt"></i>
+                ログイン画面へ
+            </a>
+    </div>
+
+	<th:block th:insert="fragments/base :: scripts"></th:block>
+
+</body>
+</html>

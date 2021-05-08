@@ -2,6 +2,7 @@ package com.example.demo.model;
 
 import java.sql.Timestamp;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -25,6 +26,7 @@ public class Memo {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long memoId;
 
+	@Column(columnDefinition = "datetime default CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP")
 	@Generated(value = GenerationTime.ALWAYS)
 	private Timestamp update_at;
 
@@ -37,6 +39,6 @@ public class Memo {
 	private String text;
 
 	@ManyToOne
-	private User user;
+	private MemoUser memoUser;
 
 }
