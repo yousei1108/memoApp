@@ -96,7 +96,7 @@
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fas fa-times-circle icon"></i>閉じる</button>
-                                                <button type="submit" class="btn btn-primary save-btn"><i class="fas fa-save icon"></i>保存</button>
+                                                <button type="submit" class="btn btn-primary save-btn" disabled="disabled"><i class="fas fa-save icon"></i>保存</button>
                                             </div>
                                         </form>
                                         
@@ -170,7 +170,7 @@
         		
         	}
         	
-            $(".open-btn").on("click" , function(){
+            $(".open-btn").click(function(){
 
                 $(".modal-title").text("メモを見る");
 
@@ -187,7 +187,7 @@
 
             })
 
-            $(".edit-btn").on("click" , function(){
+            $(".edit-btn").click(function(){
 
                 $(".modal-title").text("メモを編集");
                 
@@ -204,7 +204,7 @@
 
             })
 
-            $(".new-btn").on("click" , function(){
+            $(".new-btn").click(function(){
 
                 $(".modal-title").text("メモを書く");
 
@@ -217,7 +217,7 @@
 
             })
             
-            $(".delete-btn").on("click" , function(){
+            $(".delete-btn").click(function(){
 
                 var id = $(this).siblings(".memo-id").val();
 
@@ -232,7 +232,7 @@
 
             })
             
-            $(".memo-body").on("click" , function(){
+            $(".memo-body").click(function(){
 
                 $(".modal-title").text("メモを見る");
                 
@@ -247,6 +247,23 @@
 
                 $("#memo_form").modal("show");
 
+            })
+            
+            $("#title , #text").keydown(function(){
+            	
+            	var title = $("#title").val();
+            	var text  = $("#text").val();
+            	
+            	if(title && text){
+            		if(title.length < 100 && text.length < 1000){
+                		$(".save-btn").prop("disabled" , false)
+            		}else{
+            			$(".save-btn").prop("disabled" , true)
+            		}
+            	}else{
+            		$(".save-btn").prop("disabled" , true)
+            	}
+            	
             })
 
         });

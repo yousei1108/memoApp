@@ -127,6 +127,13 @@ body{
 	
 }
 
+.btn:disabled{
+	
+	background-color: #6c757d;
+	border-color: #6c757d;
+	
+}
+
 .form-control-plaintext#title{
 
     color:#17a2b8;

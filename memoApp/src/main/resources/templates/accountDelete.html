@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+
+	<th:block th:insert="fragments/base :: header"></th:block>	
+
+    <title>アカウント削除</title>
+</head>
+<body class="bg-dark">
+    
+    <div class="container register-form">
+        <div class="text-white h5 border-bottom mb-3">アカウント削除</div>
+        <form th:action="@{/account/delete}" method="post">
+            
+			<div class="text-white">アカウントを削除しますか？</div>
+			<div class="text-danger">（作成したメモも全て削除されます）</div>
+                   
+            
+            <button type="submit" class="btn btn-danger w-100 mt-3">
+                <i class="fas fa-user-minus"></i>
+                アカウントを削除する
+            </button>
+        </form>
+    </div>
+
+
+	<th:block th:insert="fragments/base :: scripts"></th:block>
+
+
+</body>
+</html>

@@ -2,6 +2,9 @@ package com.example.demo.controller;
 
 import java.text.SimpleDateFormat;
 
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
@@ -10,6 +13,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
+import org.springframework.validation.FieldError;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -48,14 +52,20 @@ public class MemoController {
 	}
 	
 	@GetMapping("/register")
-	public String register(@ModelAttribute("user") MemoUser user ) {
+	public String register(@ModelAttribute("user") MemoUser user , Model model) {
 		
 		return "register";
 		
 	}
 	
 	@PostMapping("/register")
-	public String process(@Validated @ModelAttribute("user") MemoUser user , BindingResult result) {
+	public String process(@Validated @ModelAttribute("user") MemoUser user , BindingResult result ,
+			 @RequestParam(name="re-password" , required = false) String rePassword) {
+		
+		if( !(user.getPassword().equals(rePassword)) ) {
+			FieldError fieldError = new FieldError(result.getObjectName() , "password" , "パスワードが異なります");
+			result.addError(fieldError);
+		}
 		
 		if(result.hasErrors()) {
 			
@@ -132,5 +142,30 @@ public class MemoController {
 		return "redirect:/memo/list/1";
 
 	}
-
+	
+	@GetMapping("/account/delete")
+	public String deleteAccount() {
+		
+		return "accountDelete";
+		
+	}
+	
+	@PostMapping("/account/delete")
+	public String accountDeleteProccess(Authentication loginUser , HttpServletRequest request) {
+		
+		try {
+			request.logout();
+		} catch (ServletException e) {
+			// TODO 自動生成された catch ブロック
+			e.printStackTrace();
+		}
+		
+		MemoUser user = userRepository.findByUserName(loginUser.getName());
+		memoRepository.deleteByMemoUser(user);
+		userRepository.delete(user);
+		
+		return "redirect:/";
+		
+	}
+	
 }

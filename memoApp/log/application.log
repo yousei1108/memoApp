@@ -1,0 +1,377 @@
+2021-05-13 02:08:53.204  WARN 14292 --- [HikariPool-5 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Thread starvation or clock leap detected (housekeeper delta=23h37m16s288ms400µs800ns).
+2021-05-13 02:09:33.091  INFO 14292 --- [http-nio-8080-exec-5] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:String com.example.demo.controller.MemoController.login()
+2021-05-13 02:09:33.092  INFO 14292 --- [http-nio-8080-exec-5] com.example.demo.aspect.LoggingAspect    : 正常終了しました:String com.example.demo.controller.MemoController.login()
+2021-05-13 02:09:35.998  INFO 14292 --- [http-nio-8080-exec-8] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:String com.example.demo.controller.MemoController.login()
+2021-05-13 02:09:35.999  INFO 14292 --- [http-nio-8080-exec-8] com.example.demo.aspect.LoggingAspect    : 正常終了しました:String com.example.demo.controller.MemoController.login()
+2021-05-13 02:09:45.486  INFO 14292 --- [http-nio-8080-exec-10] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:UserDetails com.example.demo.service.UserDetailsServiceImpl.loadUserByUsername(String)
+2021-05-13 02:09:45.487  INFO 14292 --- [http-nio-8080-exec-10] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:MemoUser com.example.demo.repository.MemoUserRepository.findByUserName(String)
+2021-05-13 02:09:45.489  INFO 14292 --- [http-nio-8080-exec-10] com.example.demo.aspect.LoggingAspect    : 正常終了しました:MemoUser com.example.demo.repository.MemoUserRepository.findByUserName(String)
+2021-05-13 02:09:45.489  INFO 14292 --- [http-nio-8080-exec-10] com.example.demo.aspect.LoggingAspect    : 正常終了しました:UserDetails com.example.demo.service.UserDetailsServiceImpl.loadUserByUsername(String)
+2021-05-13 02:09:56.125  INFO 14292 --- [http-nio-8080-exec-8] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:String com.example.demo.controller.MemoController.defaultPage()
+2021-05-13 02:09:56.126  INFO 14292 --- [http-nio-8080-exec-8] com.example.demo.aspect.LoggingAspect    : 正常終了しました:String com.example.demo.controller.MemoController.defaultPage()
+2021-05-13 02:09:56.145  INFO 14292 --- [http-nio-8080-exec-9] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:String com.example.demo.controller.MemoController.showMemoList(String,int,Memo,Model,Authentication)
+2021-05-13 02:09:56.145  INFO 14292 --- [http-nio-8080-exec-9] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:MemoUser com.example.demo.repository.MemoUserRepository.findByUserName(String)
+2021-05-13 02:09:56.146  INFO 14292 --- [http-nio-8080-exec-9] com.example.demo.aspect.LoggingAspect    : 正常終了しました:MemoUser com.example.demo.repository.MemoUserRepository.findByUserName(String)
+2021-05-13 02:09:56.146  INFO 14292 --- [http-nio-8080-exec-9] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:Page com.example.demo.repository.MemoRepository.findByMemoUser(MemoUser,Pageable)
+2021-05-13 02:09:56.147  INFO 14292 --- [http-nio-8080-exec-9] com.example.demo.aspect.LoggingAspect    : 正常終了しました:Page com.example.demo.repository.MemoRepository.findByMemoUser(MemoUser,Pageable)
+2021-05-13 02:09:56.147  INFO 14292 --- [http-nio-8080-exec-9] com.example.demo.aspect.LoggingAspect    : 正常終了しました:String com.example.demo.controller.MemoController.showMemoList(String,int,Memo,Model,Authentication)
+2021-05-13 02:10:52.076  INFO 14292 --- [http-nio-8080-exec-4] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:String com.example.demo.controller.MemoController.defaultPage()
+2021-05-13 02:10:52.077  INFO 14292 --- [http-nio-8080-exec-4] com.example.demo.aspect.LoggingAspect    : 正常終了しました:String com.example.demo.controller.MemoController.defaultPage()
+2021-05-13 02:10:52.119  INFO 14292 --- [http-nio-8080-exec-5] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:String com.example.demo.controller.MemoController.showMemoList(String,int,Memo,Model,Authentication)
+2021-05-13 02:10:52.120  INFO 14292 --- [http-nio-8080-exec-5] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:MemoUser com.example.demo.repository.MemoUserRepository.findByUserName(String)
+2021-05-13 02:10:52.121  INFO 14292 --- [http-nio-8080-exec-5] com.example.demo.aspect.LoggingAspect    : 正常終了しました:MemoUser com.example.demo.repository.MemoUserRepository.findByUserName(String)
+2021-05-13 02:10:52.122  INFO 14292 --- [http-nio-8080-exec-5] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:Page com.example.demo.repository.MemoRepository.findByMemoUser(MemoUser,Pageable)
+2021-05-13 02:10:52.123  INFO 14292 --- [http-nio-8080-exec-5] com.example.demo.aspect.LoggingAspect    : 正常終了しました:Page com.example.demo.repository.MemoRepository.findByMemoUser(MemoUser,Pageable)
+2021-05-13 02:10:52.123  INFO 14292 --- [http-nio-8080-exec-5] com.example.demo.aspect.LoggingAspect    : 正常終了しました:String com.example.demo.controller.MemoController.showMemoList(String,int,Memo,Model,Authentication)
+2021-05-13 02:12:17.337  INFO 14292 --- [http-nio-8080-exec-3] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:String com.example.demo.controller.MemoController.defaultPage()
+2021-05-13 02:12:17.337  INFO 14292 --- [http-nio-8080-exec-3] com.example.demo.aspect.LoggingAspect    : 正常終了しました:String com.example.demo.controller.MemoController.defaultPage()
+2021-05-13 02:12:17.373  INFO 14292 --- [http-nio-8080-exec-4] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:String com.example.demo.controller.MemoController.showMemoList(String,int,Memo,Model,Authentication)
+2021-05-13 02:12:17.373  INFO 14292 --- [http-nio-8080-exec-4] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:MemoUser com.example.demo.repository.MemoUserRepository.findByUserName(String)
+2021-05-13 02:12:17.375  INFO 14292 --- [http-nio-8080-exec-4] com.example.demo.aspect.LoggingAspect    : 正常終了しました:MemoUser com.example.demo.repository.MemoUserRepository.findByUserName(String)
+2021-05-13 02:12:17.375  INFO 14292 --- [http-nio-8080-exec-4] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:Page com.example.demo.repository.MemoRepository.findByMemoUser(MemoUser,Pageable)
+2021-05-13 02:12:17.376  INFO 14292 --- [http-nio-8080-exec-4] com.example.demo.aspect.LoggingAspect    : 正常終了しました:Page com.example.demo.repository.MemoRepository.findByMemoUser(MemoUser,Pageable)
+2021-05-13 02:12:17.377  INFO 14292 --- [http-nio-8080-exec-4] com.example.demo.aspect.LoggingAspect    : 正常終了しました:String com.example.demo.controller.MemoController.showMemoList(String,int,Memo,Model,Authentication)
+2021-05-13 02:12:23.725  INFO 14292 --- [http-nio-8080-exec-6] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:String com.example.demo.controller.MemoController.deleteAccount()
+2021-05-13 02:12:23.726  INFO 14292 --- [http-nio-8080-exec-6] com.example.demo.aspect.LoggingAspect    : 正常終了しました:String com.example.demo.controller.MemoController.deleteAccount()
+2021-05-13 02:12:27.140  INFO 14292 --- [http-nio-8080-exec-8] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:String com.example.demo.controller.MemoController.accountDeleteProccess(Authentication,HttpServletRequest)
+2021-05-13 02:12:27.140  INFO 14292 --- [http-nio-8080-exec-8] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:MemoUser com.example.demo.repository.MemoUserRepository.findByUserName(String)
+2021-05-13 02:12:27.142  INFO 14292 --- [http-nio-8080-exec-8] com.example.demo.aspect.LoggingAspect    : 正常終了しました:MemoUser com.example.demo.repository.MemoUserRepository.findByUserName(String)
+2021-05-13 02:12:27.142  INFO 14292 --- [http-nio-8080-exec-8] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:void com.example.demo.repository.MemoRepository.deleteByMemoUser(MemoUser)
+2021-05-13 02:12:27.145  INFO 14292 --- [http-nio-8080-exec-8] com.example.demo.aspect.LoggingAspect    : 正常終了しました:void com.example.demo.repository.MemoRepository.deleteByMemoUser(MemoUser)
+2021-05-13 02:12:27.145  INFO 14292 --- [http-nio-8080-exec-8] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:void org.springframework.data.repository.CrudRepository.delete(Object)
+2021-05-13 02:12:27.149  INFO 14292 --- [http-nio-8080-exec-8] com.example.demo.aspect.LoggingAspect    : 正常終了しました:void org.springframework.data.repository.CrudRepository.delete(Object)
+2021-05-13 02:12:27.149  INFO 14292 --- [http-nio-8080-exec-8] com.example.demo.aspect.LoggingAspect    : 正常終了しました:String com.example.demo.controller.MemoController.accountDeleteProccess(Authentication,HttpServletRequest)
+2021-05-13 02:12:27.213  INFO 14292 --- [http-nio-8080-exec-10] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:String com.example.demo.controller.MemoController.login()
+2021-05-13 02:12:27.213  INFO 14292 --- [http-nio-8080-exec-10] com.example.demo.aspect.LoggingAspect    : 正常終了しました:String com.example.demo.controller.MemoController.login()
+2021-05-13 02:12:35.986  INFO 14292 --- [http-nio-8080-exec-2] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:UserDetails com.example.demo.service.UserDetailsServiceImpl.loadUserByUsername(String)
+2021-05-13 02:12:35.986  INFO 14292 --- [http-nio-8080-exec-2] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:MemoUser com.example.demo.repository.MemoUserRepository.findByUserName(String)
+2021-05-13 02:12:35.988  INFO 14292 --- [http-nio-8080-exec-2] com.example.demo.aspect.LoggingAspect    : 正常終了しました:MemoUser com.example.demo.repository.MemoUserRepository.findByUserName(String)
+2021-05-13 02:12:35.988  INFO 14292 --- [http-nio-8080-exec-2] com.example.demo.aspect.LoggingAspect    : 例外終了しました:UserDetails com.example.demo.service.UserDetailsServiceImpl.loadUserByUsername(String) 詳細:[com.example.demo.service.UserDetailsServiceImpl.loadUserByUsername(UserDetailsServiceImpl.java:32), com.example.demo.service.UserDetailsServiceImpl$$FastClassBySpringCGLIB$$7790ab71.invoke(<generated>), org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218), org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779), org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163), org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750), org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64), org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186), org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750), org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:57), org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186), org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750), org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58), org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186), org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750), org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97), org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186), org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750), org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692), com.example.demo.service.UserDetailsServiceImpl$$EnhancerBySpringCGLIB$$f9e62a41.loadUserByUsername(<generated>), org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:93), org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:133), org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182), org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:201), org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:85), org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:222), org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212), org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336), org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103), org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89), org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336), org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:132), org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119), org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336), org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90), org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75), org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119), org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336), org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110), org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80), org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336), org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55), org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119), org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336), org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211), org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183), org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358), org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271), org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189), org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162), org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100), org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119), org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189), org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162), org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93), org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119), org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189), org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162), org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201), org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119), org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189), org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162), org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202), org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97), org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542), org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143), org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92), org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78), org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357), org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374), org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65), org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893), org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707), org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49), java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130), java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630), org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61), java.base/java.lang.Thread.run(Thread.java:832)]
+2021-05-13 02:12:36.176  INFO 14292 --- [http-nio-8080-exec-3] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:String com.example.demo.controller.MemoController.login()
+2021-05-13 02:12:36.176  INFO 14292 --- [http-nio-8080-exec-3] com.example.demo.aspect.LoggingAspect    : 正常終了しました:String com.example.demo.controller.MemoController.login()
+2021-05-13 02:12:38.879  INFO 14292 --- [http-nio-8080-exec-5] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:String com.example.demo.controller.MemoController.register(MemoUser,Model)
+2021-05-13 02:12:38.880  INFO 14292 --- [http-nio-8080-exec-5] com.example.demo.aspect.LoggingAspect    : 正常終了しました:String com.example.demo.controller.MemoController.register(MemoUser,Model)
+2021-05-13 02:12:40.331  INFO 14292 --- [http-nio-8080-exec-7] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:String com.example.demo.controller.MemoController.login()
+2021-05-13 02:12:40.332  INFO 14292 --- [http-nio-8080-exec-7] com.example.demo.aspect.LoggingAspect    : 正常終了しました:String com.example.demo.controller.MemoController.login()
+2021-05-13 02:12:42.317  INFO 14292 --- [http-nio-8080-exec-9] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:String com.example.demo.controller.MemoController.register(MemoUser,Model)
+2021-05-13 02:12:42.318  INFO 14292 --- [http-nio-8080-exec-9] com.example.demo.aspect.LoggingAspect    : 正常終了しました:String com.example.demo.controller.MemoController.register(MemoUser,Model)
+2021-05-13 02:12:50.962  INFO 14292 --- [http-nio-8080-exec-1] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:boolean com.example.demo.validator.UniqueUserNameValidator.isValid(String,ConstraintValidatorContext)
+2021-05-13 02:12:50.963  INFO 14292 --- [http-nio-8080-exec-1] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:MemoUser com.example.demo.repository.MemoUserRepository.findByUserName(String)
+2021-05-13 02:12:50.965  INFO 14292 --- [http-nio-8080-exec-1] com.example.demo.aspect.LoggingAspect    : 正常終了しました:MemoUser com.example.demo.repository.MemoUserRepository.findByUserName(String)
+2021-05-13 02:12:50.965  INFO 14292 --- [http-nio-8080-exec-1] com.example.demo.aspect.LoggingAspect    : 正常終了しました:boolean com.example.demo.validator.UniqueUserNameValidator.isValid(String,ConstraintValidatorContext)
+2021-05-13 02:12:50.966  INFO 14292 --- [http-nio-8080-exec-1] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:String com.example.demo.controller.MemoController.process(MemoUser,BindingResult,String)
+2021-05-13 02:12:51.120  INFO 14292 --- [http-nio-8080-exec-1] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:Object org.springframework.data.repository.CrudRepository.save(Object)
+2021-05-13 02:12:51.122  INFO 14292 --- [http-nio-8080-exec-1] com.example.demo.aspect.LoggingAspect    : 正常終了しました:Object org.springframework.data.repository.CrudRepository.save(Object)
+2021-05-13 02:12:51.122  INFO 14292 --- [http-nio-8080-exec-1] com.example.demo.aspect.LoggingAspect    : 正常終了しました:String com.example.demo.controller.MemoController.process(MemoUser,BindingResult,String)
+2021-05-13 02:12:51.141  INFO 14292 --- [http-nio-8080-exec-2] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:String com.example.demo.controller.MemoController.result()
+2021-05-13 02:12:51.141  INFO 14292 --- [http-nio-8080-exec-2] com.example.demo.aspect.LoggingAspect    : 正常終了しました:String com.example.demo.controller.MemoController.result()
+2021-05-13 02:12:53.222  INFO 14292 --- [http-nio-8080-exec-4] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:String com.example.demo.controller.MemoController.login()
+2021-05-13 02:12:53.223  INFO 14292 --- [http-nio-8080-exec-4] com.example.demo.aspect.LoggingAspect    : 正常終了しました:String com.example.demo.controller.MemoController.login()
+2021-05-13 02:12:58.969  INFO 14292 --- [http-nio-8080-exec-6] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:UserDetails com.example.demo.service.UserDetailsServiceImpl.loadUserByUsername(String)
+2021-05-13 02:12:58.970  INFO 14292 --- [http-nio-8080-exec-6] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:MemoUser com.example.demo.repository.MemoUserRepository.findByUserName(String)
+2021-05-13 02:12:58.973  INFO 14292 --- [http-nio-8080-exec-6] com.example.demo.aspect.LoggingAspect    : 正常終了しました:MemoUser com.example.demo.repository.MemoUserRepository.findByUserName(String)
+2021-05-13 02:12:58.973  INFO 14292 --- [http-nio-8080-exec-6] com.example.demo.aspect.LoggingAspect    : 正常終了しました:UserDetails com.example.demo.service.UserDetailsServiceImpl.loadUserByUsername(String)
+2021-05-13 02:12:59.171  INFO 14292 --- [http-nio-8080-exec-7] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:String com.example.demo.controller.MemoController.defaultPage()
+2021-05-13 02:12:59.171  INFO 14292 --- [http-nio-8080-exec-7] com.example.demo.aspect.LoggingAspect    : 正常終了しました:String com.example.demo.controller.MemoController.defaultPage()
+2021-05-13 02:12:59.197  INFO 14292 --- [http-nio-8080-exec-8] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:String com.example.demo.controller.MemoController.showMemoList(String,int,Memo,Model,Authentication)
+2021-05-13 02:12:59.198  INFO 14292 --- [http-nio-8080-exec-8] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:MemoUser com.example.demo.repository.MemoUserRepository.findByUserName(String)
+2021-05-13 02:12:59.199  INFO 14292 --- [http-nio-8080-exec-8] com.example.demo.aspect.LoggingAspect    : 正常終了しました:MemoUser com.example.demo.repository.MemoUserRepository.findByUserName(String)
+2021-05-13 02:12:59.199  INFO 14292 --- [http-nio-8080-exec-8] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:Page com.example.demo.repository.MemoRepository.findByMemoUser(MemoUser,Pageable)
+2021-05-13 02:12:59.200  INFO 14292 --- [http-nio-8080-exec-8] com.example.demo.aspect.LoggingAspect    : 正常終了しました:Page com.example.demo.repository.MemoRepository.findByMemoUser(MemoUser,Pageable)
+2021-05-13 02:12:59.200  INFO 14292 --- [http-nio-8080-exec-8] com.example.demo.aspect.LoggingAspect    : 正常終了しました:String com.example.demo.controller.MemoController.showMemoList(String,int,Memo,Model,Authentication)
+2021-05-13 02:13:09.659  INFO 14292 --- [http-nio-8080-exec-10] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:String com.example.demo.controller.MemoController.saveMemo(Memo,BindingResult,Authentication)
+2021-05-13 02:13:09.659  INFO 14292 --- [http-nio-8080-exec-10] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:MemoUser com.example.demo.repository.MemoUserRepository.findByUserName(String)
+2021-05-13 02:13:09.661  INFO 14292 --- [http-nio-8080-exec-10] com.example.demo.aspect.LoggingAspect    : 正常終了しました:MemoUser com.example.demo.repository.MemoUserRepository.findByUserName(String)
+2021-05-13 02:13:09.668  INFO 14292 --- [http-nio-8080-exec-10] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:Object org.springframework.data.repository.CrudRepository.save(Object)
+2021-05-13 02:13:09.673  INFO 14292 --- [http-nio-8080-exec-10] com.example.demo.aspect.LoggingAspect    : 正常終了しました:Object org.springframework.data.repository.CrudRepository.save(Object)
+2021-05-13 02:13:09.673  INFO 14292 --- [http-nio-8080-exec-10] com.example.demo.aspect.LoggingAspect    : 正常終了しました:String com.example.demo.controller.MemoController.saveMemo(Memo,BindingResult,Authentication)
+2021-05-13 02:13:09.725  INFO 14292 --- [http-nio-8080-exec-1] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:String com.example.demo.controller.MemoController.showMemoList(String,int,Memo,Model,Authentication)
+2021-05-13 02:13:09.726  INFO 14292 --- [http-nio-8080-exec-1] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:MemoUser com.example.demo.repository.MemoUserRepository.findByUserName(String)
+2021-05-13 02:13:09.727  INFO 14292 --- [http-nio-8080-exec-1] com.example.demo.aspect.LoggingAspect    : 正常終了しました:MemoUser com.example.demo.repository.MemoUserRepository.findByUserName(String)
+2021-05-13 02:13:09.727  INFO 14292 --- [http-nio-8080-exec-1] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:Page com.example.demo.repository.MemoRepository.findByMemoUser(MemoUser,Pageable)
+2021-05-13 02:13:09.729  INFO 14292 --- [http-nio-8080-exec-1] com.example.demo.aspect.LoggingAspect    : 正常終了しました:Page com.example.demo.repository.MemoRepository.findByMemoUser(MemoUser,Pageable)
+2021-05-13 02:13:09.729  INFO 14292 --- [http-nio-8080-exec-1] com.example.demo.aspect.LoggingAspect    : 正常終了しました:String com.example.demo.controller.MemoController.showMemoList(String,int,Memo,Model,Authentication)
+2021-05-13 02:13:20.453  INFO 14292 --- [http-nio-8080-exec-4] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:String com.example.demo.controller.MemoController.saveMemo(Memo,BindingResult,Authentication)
+2021-05-13 02:13:20.455  INFO 14292 --- [http-nio-8080-exec-4] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:MemoUser com.example.demo.repository.MemoUserRepository.findByUserName(String)
+2021-05-13 02:13:20.456  INFO 14292 --- [http-nio-8080-exec-4] com.example.demo.aspect.LoggingAspect    : 正常終了しました:MemoUser com.example.demo.repository.MemoUserRepository.findByUserName(String)
+2021-05-13 02:13:20.456  INFO 14292 --- [http-nio-8080-exec-4] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:Object org.springframework.data.repository.CrudRepository.save(Object)
+2021-05-13 02:13:20.460  INFO 14292 --- [http-nio-8080-exec-4] com.example.demo.aspect.LoggingAspect    : 正常終了しました:Object org.springframework.data.repository.CrudRepository.save(Object)
+2021-05-13 02:13:20.460  INFO 14292 --- [http-nio-8080-exec-4] com.example.demo.aspect.LoggingAspect    : 正常終了しました:String com.example.demo.controller.MemoController.saveMemo(Memo,BindingResult,Authentication)
+2021-05-13 02:13:20.494  INFO 14292 --- [http-nio-8080-exec-5] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:String com.example.demo.controller.MemoController.showMemoList(String,int,Memo,Model,Authentication)
+2021-05-13 02:13:20.494  INFO 14292 --- [http-nio-8080-exec-5] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:MemoUser com.example.demo.repository.MemoUserRepository.findByUserName(String)
+2021-05-13 02:13:20.499  INFO 14292 --- [http-nio-8080-exec-5] com.example.demo.aspect.LoggingAspect    : 正常終了しました:MemoUser com.example.demo.repository.MemoUserRepository.findByUserName(String)
+2021-05-13 02:13:20.499  INFO 14292 --- [http-nio-8080-exec-5] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:Page com.example.demo.repository.MemoRepository.findByMemoUser(MemoUser,Pageable)
+2021-05-13 02:13:20.501  INFO 14292 --- [http-nio-8080-exec-5] com.example.demo.aspect.LoggingAspect    : 正常終了しました:Page com.example.demo.repository.MemoRepository.findByMemoUser(MemoUser,Pageable)
+2021-05-13 02:13:20.501  INFO 14292 --- [http-nio-8080-exec-5] com.example.demo.aspect.LoggingAspect    : 正常終了しました:String com.example.demo.controller.MemoController.showMemoList(String,int,Memo,Model,Authentication)
+2021-05-13 02:13:22.873  INFO 14292 --- [http-nio-8080-exec-7] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:String com.example.demo.controller.MemoController.deleteAccount()
+2021-05-13 02:13:22.874  INFO 14292 --- [http-nio-8080-exec-7] com.example.demo.aspect.LoggingAspect    : 正常終了しました:String com.example.demo.controller.MemoController.deleteAccount()
+2021-05-13 02:13:26.133  INFO 14292 --- [http-nio-8080-exec-9] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:String com.example.demo.controller.MemoController.accountDeleteProccess(Authentication,HttpServletRequest)
+2021-05-13 02:13:26.134  INFO 14292 --- [http-nio-8080-exec-9] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:MemoUser com.example.demo.repository.MemoUserRepository.findByUserName(String)
+2021-05-13 02:13:26.136  INFO 14292 --- [http-nio-8080-exec-9] com.example.demo.aspect.LoggingAspect    : 正常終了しました:MemoUser com.example.demo.repository.MemoUserRepository.findByUserName(String)
+2021-05-13 02:13:26.136  INFO 14292 --- [http-nio-8080-exec-9] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:void com.example.demo.repository.MemoRepository.deleteByMemoUser(MemoUser)
+2021-05-13 02:13:26.141  INFO 14292 --- [http-nio-8080-exec-9] com.example.demo.aspect.LoggingAspect    : 正常終了しました:void com.example.demo.repository.MemoRepository.deleteByMemoUser(MemoUser)
+2021-05-13 02:13:26.141  INFO 14292 --- [http-nio-8080-exec-9] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:void org.springframework.data.repository.CrudRepository.delete(Object)
+2021-05-13 02:13:26.144  INFO 14292 --- [http-nio-8080-exec-9] com.example.demo.aspect.LoggingAspect    : 正常終了しました:void org.springframework.data.repository.CrudRepository.delete(Object)
+2021-05-13 02:13:26.145  INFO 14292 --- [http-nio-8080-exec-9] com.example.demo.aspect.LoggingAspect    : 正常終了しました:String com.example.demo.controller.MemoController.accountDeleteProccess(Authentication,HttpServletRequest)
+2021-05-13 02:13:26.208  INFO 14292 --- [http-nio-8080-exec-1] com.example.demo.aspect.LoggingAspect    : 処理を開始しました:String com.example.demo.controller.MemoController.login()
+2021-05-13 02:13:26.208  INFO 14292 --- [http-nio-8080-exec-1] com.example.demo.aspect.LoggingAspect    : 正常終了しました:String com.example.demo.controller.MemoController.login()
+2021-05-13 02:18:03.971  INFO 14292 --- [Thread-19] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-13 02:18:03.973  INFO 14292 --- [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-13 02:18:03.974  INFO 14292 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2021-05-13 02:18:03.994  INFO 14292 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2021-05-13 02:18:04.113  INFO 14292 --- [restartedMain] com.example.demo.MemoAppApplication      : Starting MemoAppApplication using Java 15.0.2 on DESKTOP-ICIF3EO with PID 14292 (C:\Users\youse\git\memoApp\memoApp\target\classes started by youse in C:\Users\youse\git\memoApp\memoApp)
+2021-05-13 02:18:04.113  INFO 14292 --- [restartedMain] com.example.demo.MemoAppApplication      : No active profile set, falling back to default profiles: default
+2021-05-13 02:18:04.328  INFO 14292 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-13 02:18:04.339  INFO 14292 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 2 JPA repository interfaces.
+2021-05-13 02:18:04.547  INFO 14292 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5000 (http)
+2021-05-13 02:18:04.548  INFO 14292 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-13 02:18:04.549  INFO 14292 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-13 02:18:04.581  INFO 14292 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2021-05-13 02:18:04.581  INFO 14292 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 464 ms
+2021-05-13 02:18:04.599 ERROR 14292 --- [restartedMain] o.s.b.web.embedded.tomcat.TomcatStarter  : Error starting Tomcat context. Exception: org.springframework.beans.factory.BeanCreationException. Message: Error creating bean with name 'h2Console' defined in class path resource [org/springframework/boot/autoconfigure/h2/H2ConsoleAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.web.servlet.ServletRegistrationBean]: Factory method 'h2Console' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalArgumentException: URL must start with 'jdbc'
+2021-05-13 02:18:04.618  INFO 14292 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-05-13 02:18:04.620  WARN 14292 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2021-05-13 02:18:04.624  INFO 14292 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-05-13 02:18:04.629 ERROR 14292 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:577) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:782) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:774) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1340) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329) ~[spring-boot-2.4.5.jar:2.4.5]
+	at com.example.demo.MemoAppApplication.main(MemoAppApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.4.5.jar:2.4.5]
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:142) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:104) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:450) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:199) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:181) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:159) ~[spring-boot-2.4.5.jar:2.4.5]
+	... 14 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'h2Console' defined in class path resource [org/springframework/boot/autoconfigure/h2/H2ConsoleAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.web.servlet.ServletRegistrationBean]: Factory method 'h2Console' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalArgumentException: URL must start with 'jdbc'
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:212) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:203) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addServletContextInitializerBeans(ServletContextInitializerBeans.java:97) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:86) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:259) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:233) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:53) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5161) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:843) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:930) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:486) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:123) ~[spring-boot-2.4.5.jar:2.4.5]
+	... 19 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.web.servlet.ServletRegistrationBean]: Factory method 'h2Console' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalArgumentException: URL must start with 'jdbc'
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.6.jar:5.3.6]
+	... 59 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalArgumentException: URL must start with 'jdbc'
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.getIfAvailable(DefaultListableBeanFactory.java:2021) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.ifAvailable(DefaultListableBeanFactory.java:2032) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration.h2Console(H2ConsoleAutoConfiguration.java:66) ~[spring-boot-autoconfigure-2.4.5.jar:2.4.5]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.6.jar:5.3.6]
+	... 60 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalArgumentException: URL must start with 'jdbc'
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.6.jar:5.3.6]
+	... 79 common frames omitted
+Caused by: java.lang.IllegalArgumentException: URL must start with 'jdbc'
+	at org.springframework.util.Assert.isTrue(Assert.java:121) ~[spring-core-5.3.6.jar:5.3.6]
+	at org.springframework.boot.jdbc.DatabaseDriver.fromJdbcUrl(DatabaseDriver.java:283) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.determineDriverClassName(DataSourceProperties.java:229) ~[spring-boot-autoconfigure-2.4.5.jar:2.4.5]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.initializeDataSourceBuilder(DataSourceProperties.java:176) ~[spring-boot-autoconfigure-2.4.5.jar:2.4.5]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration.createDataSource(DataSourceConfiguration.java:48) ~[spring-boot-autoconfigure-2.4.5.jar:2.4.5]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari.dataSource(DataSourceConfiguration.java:90) ~[spring-boot-autoconfigure-2.4.5.jar:2.4.5]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.6.jar:5.3.6]
+	... 80 common frames omitted
+
+2021-05-13 02:20:30.913  INFO 14292 --- [restartedMain] com.example.demo.MemoAppApplication      : Starting MemoAppApplication using Java 15.0.2 on DESKTOP-ICIF3EO with PID 14292 (C:\Users\youse\git\memoApp\memoApp\target\classes started by youse in C:\Users\youse\git\memoApp\memoApp)
+2021-05-13 02:20:30.914  INFO 14292 --- [restartedMain] com.example.demo.MemoAppApplication      : No active profile set, falling back to default profiles: default
+2021-05-13 02:20:31.106  INFO 14292 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-13 02:20:31.119  INFO 14292 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 2 JPA repository interfaces.
+2021-05-13 02:20:31.286  INFO 14292 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5000 (http)
+2021-05-13 02:20:31.287  INFO 14292 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-13 02:20:31.287  INFO 14292 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-13 02:20:31.305  INFO 14292 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2021-05-13 02:20:31.305  INFO 14292 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 389 ms
+2021-05-13 02:20:31.315 ERROR 14292 --- [restartedMain] o.s.b.web.embedded.tomcat.TomcatStarter  : Error starting Tomcat context. Exception: org.springframework.beans.factory.BeanCreationException. Message: Error creating bean with name 'h2Console' defined in class path resource [org/springframework/boot/autoconfigure/h2/H2ConsoleAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.web.servlet.ServletRegistrationBean]: Factory method 'h2Console' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalArgumentException: URL must start with 'jdbc'
+2021-05-13 02:20:31.325  INFO 14292 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-05-13 02:20:31.327  WARN 14292 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2021-05-13 02:20:31.331  INFO 14292 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-05-13 02:20:31.335 ERROR 14292 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:577) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:782) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:774) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1340) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329) ~[spring-boot-2.4.5.jar:2.4.5]
+	at com.example.demo.MemoAppApplication.main(MemoAppApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.4.5.jar:2.4.5]
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:142) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:104) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:450) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:199) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:181) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:159) ~[spring-boot-2.4.5.jar:2.4.5]
+	... 14 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'h2Console' defined in class path resource [org/springframework/boot/autoconfigure/h2/H2ConsoleAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.web.servlet.ServletRegistrationBean]: Factory method 'h2Console' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalArgumentException: URL must start with 'jdbc'
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:212) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:203) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addServletContextInitializerBeans(ServletContextInitializerBeans.java:97) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:86) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:259) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:233) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:53) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5161) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:843) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:930) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:486) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:123) ~[spring-boot-2.4.5.jar:2.4.5]
+	... 19 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.web.servlet.ServletRegistrationBean]: Factory method 'h2Console' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalArgumentException: URL must start with 'jdbc'
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.6.jar:5.3.6]
+	... 59 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalArgumentException: URL must start with 'jdbc'
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.getIfAvailable(DefaultListableBeanFactory.java:2021) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.ifAvailable(DefaultListableBeanFactory.java:2032) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration.h2Console(H2ConsoleAutoConfiguration.java:66) ~[spring-boot-autoconfigure-2.4.5.jar:2.4.5]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.6.jar:5.3.6]
+	... 60 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalArgumentException: URL must start with 'jdbc'
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.6.jar:5.3.6]
+	... 79 common frames omitted
+Caused by: java.lang.IllegalArgumentException: URL must start with 'jdbc'
+	at org.springframework.util.Assert.isTrue(Assert.java:121) ~[spring-core-5.3.6.jar:5.3.6]
+	at org.springframework.boot.jdbc.DatabaseDriver.fromJdbcUrl(DatabaseDriver.java:283) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.determineDriverClassName(DataSourceProperties.java:229) ~[spring-boot-autoconfigure-2.4.5.jar:2.4.5]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.initializeDataSourceBuilder(DataSourceProperties.java:176) ~[spring-boot-autoconfigure-2.4.5.jar:2.4.5]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration.createDataSource(DataSourceConfiguration.java:48) ~[spring-boot-autoconfigure-2.4.5.jar:2.4.5]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari.dataSource(DataSourceConfiguration.java:90) ~[spring-boot-autoconfigure-2.4.5.jar:2.4.5]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.6.jar:5.3.6]
+	... 80 common frames omitted
+
